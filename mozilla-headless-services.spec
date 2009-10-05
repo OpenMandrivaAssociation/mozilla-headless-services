@@ -15,6 +15,7 @@ BuildRequires: libdbus-glib-devel
 BuildRequires: libGConf2-devel
 BuildRequires: xulrunner-headless-devel
 BuildRequires: gnome-common
+BuildRequires: gtk-doc
 
 Requires: xulrunner-headless
 
