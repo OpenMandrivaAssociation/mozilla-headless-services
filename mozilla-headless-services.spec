@@ -29,7 +29,6 @@ and preferences.
 Summary: Mozilla Headless Services development environment
 Group: Development/Libraries
 Requires: %{name} >= %{version}
-Obsoletes: places-glib-devel
 
 %description devel
 Header files and libraries for Mozilla Headless Services
