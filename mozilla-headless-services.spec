@@ -37,6 +37,7 @@ Header files and libraries for Mozilla Headless Services
 %setup -q 
 %patch0
 %patch1
+perl -pi -e 's,^./configure.*,,' ./autogen.sh
 
 %build
 ./autogen.sh
