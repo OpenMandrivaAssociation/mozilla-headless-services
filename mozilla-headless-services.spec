@@ -1,6 +1,6 @@
 Name: mozilla-headless-services
 Summary: DBus Mozilla Services library
-Group: System Environment/Desktop
+Group: Networking/WWW
 Version: 0.10.3
 License: LGPL
 URL: http://www.moblin.org
@@ -27,7 +27,7 @@ and preferences.
 %package devel
 
 Summary: Mozilla Headless Services development environment
-Group: Development/Libraries
+Group: Development/Other
 Requires: %{name} >= %{version}
 
 %description devel
