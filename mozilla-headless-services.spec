@@ -8,7 +8,7 @@ Group: Networking/WWW
 Version: 0.10.3
 License: LGPL
 URL: http://www.moblin.org
-Release: %mkrel 1
+Release: %mkrel 2
 Source0: http://git.moblin.org/cgit.cgi/%{name}/snapshot/%{name}-%{version}.tar.bz2
 Patch0: %{name}-0.10.2-makefile.patch
 Patch1: %{name}-0.10.3-includes.patch
