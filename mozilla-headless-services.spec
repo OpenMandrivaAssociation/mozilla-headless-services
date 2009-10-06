@@ -39,7 +39,7 @@ Widget to enable embedding of mozilla browser in your clutter applications
 %package -n %{develname}
 Summary: Mozilla Headless Services development environment
 Group: Development/Other
-Requires: %{name} >= %{version}
+Requires: %{libname} = %{version}-%{release}
 
 %description -n %{develname}
 Header files and libraries for Mozilla Headless Services
