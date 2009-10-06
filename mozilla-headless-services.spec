@@ -1,3 +1,7 @@
+%define major		0
+%define libname		%mklibname %{name} %{major}
+%define develname	%mklibname %{name} -d
+
 Name: mozilla-headless-services
 Summary: DBus Mozilla Services library
 Group: Networking/WWW
@@ -24,13 +28,20 @@ Mozilla Headless Services provides a DBus interface to
 various Mozilla services, such as history, bookmarking
 and preferences.
 
-%package devel
+%package -n %{libname}
+Summary: Clutter mozembed library
+Group: System/Libraries
+Requires: %{name}
 
+%description -n %{libname}
+Widget to enable embedding of mozilla browser in your clutter applications
+
+%package -n %{develname}
 Summary: Mozilla Headless Services development environment
 Group: Development/Other
 Requires: %{name} >= %{version}
 
-%description devel
+%description -n %{develname}
 Header files and libraries for Mozilla Headless Services
 
 %prep
@@ -60,13 +71,17 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%exclude %{_libdir}/*.la
-%{_libdir}/*.so.*
 %{_libexecdir}/mhs-service
 %{_datadir}/dbus-1/services/*.service
 
-%files devel
+%files -n %{libname}
 %defattr(-,root,root,-)
+%{_libdir}/*.so.%{major}*
+
+%files -n %{develname}
+%defattr(-,root,root,-)
+%{_libdir}/*.la
 %{_libdir}/*.so
+%dir %{_includedir}/mhs-1.0
 %{_includedir}/mhs-1.0/*
 %{_libdir}/pkgconfig/*.pc
