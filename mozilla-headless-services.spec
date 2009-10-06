@@ -8,7 +8,7 @@ Group: Networking/WWW
 Version: 0.10.3
 License: LGPL
 URL: http://www.moblin.org
-Release: %mkrel 2
+Release: %mkrel 3
 Source0: http://git.moblin.org/cgit.cgi/%{name}/snapshot/%{name}-%{version}.tar.bz2
 Patch0: %{name}-0.10.2-makefile.patch
 Patch1: %{name}-0.10.3-includes.patch
@@ -40,6 +40,7 @@ Widget to enable embedding of mozilla browser in your clutter applications
 Summary: Mozilla Headless Services development environment
 Group: Development/Other
 Requires: %{libname} = %{version}-%{release}
+Provides: %{name}-devel
 
 %description -n %{develname}
 Header files and libraries for Mozilla Headless Services
