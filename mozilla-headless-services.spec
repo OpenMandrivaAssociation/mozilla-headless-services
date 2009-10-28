@@ -5,7 +5,7 @@
 Name: mozilla-headless-services
 Summary: DBus Mozilla Services library
 Group: Networking/WWW
-Version: 0.10.3
+Version: 0.10.4
 License: LGPL
 URL: http://www.moblin.org
 Release: %mkrel 3
