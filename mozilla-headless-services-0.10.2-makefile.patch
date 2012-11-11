@@ -1,0 +1,18 @@
+--- configure.ac.old	2009-09-24 13:48:49.000000000 -0400
++++ configure.ac	2009-09-24 13:48:59.000000000 -0400
+@@ -89,13 +89,13 @@
+               enable_maintainer_flags=maintainer_flags_default)
+ 
+ if test "x$enable_maintainer_flags" = "xyes"; then
+-  MHS_MAINTAINER_CFLAGS="-Werror -Wall -Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self"
++  MHS_MAINTAINER_CFLAGS="-Wall -Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self"
+ fi
+ AC_SUBST(MHS_MAINTAINER_CFLAGS)
+ 
+ AM_PROG_LIBTOOL
+ 
+-PKG_CHECK_MODULES(XUL, [libxul])
++PKG_CHECK_MODULES(XUL, [libxul-headless])
+ PKG_CHECK_MODULES(GLIB, [glib-2.0])
+ PKG_CHECK_MODULES(DBUS, [dbus-glib-1])
+
