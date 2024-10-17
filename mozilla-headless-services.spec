@@ -7,7 +7,7 @@ Summary: DBus Mozilla Services library
 Group: Networking/WWW
 Version: 0.10.4
 License: LGPL
-URL: http://www.moblin.org
+URL: https://www.moblin.org
 Release: %mkrel 2
 Source0: http://git.moblin.org/cgit.cgi/%{name}/snapshot/%{name}-%{version}.tar.bz2
 Patch0: %{name}-0.10.2-makefile.patch
