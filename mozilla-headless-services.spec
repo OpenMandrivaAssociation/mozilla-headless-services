@@ -14,6 +14,11 @@ Patch0: %{name}-0.10.2-makefile.patch
 Patch1: %{name}-0.10.3-includes.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: libglib2-devel
 BuildRequires: libdbus-glib-devel
 BuildRequires: libGConf2-devel
